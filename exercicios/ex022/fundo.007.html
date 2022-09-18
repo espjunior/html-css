@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /* CONFIGURAÇÃO PARA CENTRALIZAR A IMAGEM NO CENTRO COM RESPONSIVIDADE */
+        #container { /* ELEMENTO DE FORA O BACKGROUND */
+            background-image: url(imagens/target001.png); /* IMPORTANDO UMA IMAGEM */
+            background-size: 100% 100%; /* A IMAGEM FICA CENTRALZADA OCUPANDO 100% */
+
+            position: relative;
+            height: 96vh; /* VIEWPORT HEIGHT. É COMO SE FOSSE PORCENTAGEM DA ALTURA */
+            padding: 10%;
+            background-color: purple; /* COR DE FUNDO */
+        }
+
+        #conteudo { /* COMPONENTE DE DENTRO. OBEJTO PARA FICAR SEMPRE CENTRALIZADO INDEPENDE DO TAMANO DA TELA */
+            background-image: url(imagens/target001.png); /* IMPORTANDO UMA IMAGEM */
+            background-size: 100% 100%; /* A IMAGEM FICA CENTRALZADA OCUPANDO 100% */
+
+            position: absolute;
+            /* QUANDO COLOCA POSITION ABSOLUTE, PODEMOS CONFIGURAR AS PROPRIEDADES LEFT E TOP */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            /* QUANDO COLOCA POSITION ABSOLUTE, PODEMOS CONFIGURAR AS PROPRIEDADES LEFT E TOP */
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); /* A IMAGEM SERÁ CENTRALIZADA */
+            /* VALORES NEGATIVOS APROXIMA PARA À ESQUERDA */
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
