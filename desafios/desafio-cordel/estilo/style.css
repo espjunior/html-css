@@ -17,9 +17,51 @@ header {
 }
 
 header > h1 {
-    padding-top: 50px;
+    padding-top: 50px; /* ESPAÇAMENTO ACIMA DO TEXTO */
     /* text-transform: "uppercase"; DEIXA TODAS AS LETRAS MAIUSCULAS */
     font-variant: small-caps; /* LETRAS MAIUSCULAS COM A PRIMEIRA LETRA MAIOR */
 } 
 
+header > p {
+    padding-bottom: 50px; /* ESPAÇAMENTO DO ABAIXO DO TEXTO */
+}
+
+a {
+    color: white;
+    text-decoration: none; /* TIRA O SUBLINHADO DOS LINKS */
+    font-weight: bolder; /* FONTE NEGRITO */
+}
+
+a:hover {
+    text-decoration: underline; /* COLOCAR O SUBLINAHDO NO TEXTO */
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /* ESPAÇAMENTO ENTRE OS TEXTOS DE CIMA PARA BAIXO */
+    padding-left: 30px; /* ESPAÇAMENTO DO TEXTO DO LADO ESQUERDO */
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: pink;
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px; /* LIMITANDO O QUADRO CRIADO PELO BACKGROUND */
+    background-color: black; /* CRIAÇÃO DO BACKGROUND DENTRO DA SECTION */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
