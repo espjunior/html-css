@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
-body {
-    background-color: peru;
+* { /* CONFIGURAÇÕES GLOBAIS PARA TODOS OS ELEMENTOS DO SITE */
+    margin: 0px; /* TODOS OS ELEMENTOS IRÃO FICAR JUNTOS */
+    padding: 0px; /* TODOS OS ELEMENTOS IRÃO FICAR JUNTOS */
 }
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /* text-transform: "uppercase"; DEIXA TODAS AS LETRAS MAIUSCULAS */
+    font-variant: small-caps; /* LETRAS MAIUSCULAS COM A PRIMEIRA LETRA MAIOR */
+} 
+
+
