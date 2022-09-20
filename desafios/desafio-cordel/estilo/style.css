@@ -1,13 +1,31 @@
 @charset "UTF-8";
 
+/* IMPORTANDO FONTES DO GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,400;1,100&display=swap');
+
+/* IMPORTANDO FONTES DO GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+/* CRIAÇÃO DE VARIAVEIS */
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
+
 * { /* CONFIGURAÇÕES GLOBAIS PARA TODOS OS ELEMENTOS DO SITE */
     margin: 0px; /* TODOS OS ELEMENTOS IRÃO FICAR JUNTOS */
-    padding: 0px; /* TODOS OS ELEMENTOS IRÃO FICAR JUNTOS */
+    padding: 0px;
+    font-size: 1em;
+    
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte01);
 }
 
 header {
@@ -20,6 +38,8 @@ header > h1 {
     padding-top: 50px; /* ESPAÇAMENTO ACIMA DO TEXTO */
     /* text-transform: "uppercase"; DEIXA TODAS AS LETRAS MAIUSCULAS */
     font-variant: small-caps; /* LETRAS MAIUSCULAS COM A PRIMEIRA LETRA MAIOR */
+    font-family: var(--fonte02);
+    font-size: 10vh; /* A TELA VAI OCUPAR 10% DA TELA */
 } 
 
 header > p {
@@ -41,6 +61,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /* ESPAÇAMENTO ENTRE OS TEXTOS DE CIMA PARA BAIXO */
     padding-left: 30px; /* ESPAÇAMENTO DO TEXTO DO LADO ESQUERDO */
+    font-family: var(--fonte03);
+    font-size: 2em;
 }
 
 section.normal {
