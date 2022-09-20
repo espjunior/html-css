@@ -65,6 +65,10 @@ section {
     font-size: 2em;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -73,11 +77,26 @@ section.normal {
 section.imagem {
     background-color: pink;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover; /* REDUCAO DA IMAGEM PARA ADEQUEAR A TELA */
+    background-attachment: fixed; /* FIXAR A IMAGEM */
 }
 
 section.imagem > p {
-    width: 400px; /* LIMITANDO O QUADRO CRIADO PELO BACKGROUND */
-    background-color: black; /* CRIAÇÃO DO BACKGROUND DENTRO DA SECTION */
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(13, 36, 10, 0.596); /* CRIAÇÃO DO BACKGROUND DENTRO DA SECTION */
+    text-shadow: 1px 1px 0px black; /* COLOCAR SOMBRAS NA FONTE */
+    
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
