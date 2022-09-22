@@ -28,12 +28,16 @@
             font-weight: bold; /* LETRA EM NEGRITO */
             padding: 10px;
             background-color: lightgray;
-            border: 1px solid black;
+            border: 0px solid black;
         }
 
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) { /* EFEITO ZEBRADO NA TABELA COR SIM E COR NÃO */
+            background-color: lightgray;
         }
 
         td.num {
@@ -85,7 +89,7 @@
                 <td class="num">11.433.957</td>
             </tr>
             <tr>
-                <td>Pernambuco</td>
+                <td>Rio Grande do Sul</td>
                 <td class="num">12.098.234</td>
             </tr>
             <tr>
