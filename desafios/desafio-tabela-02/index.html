@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03 de Tabelas </title>
+    <style>
+
+        table {
+                border-collapse: collapse;
+            
+        } 
+
+        tr, td, th {
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            width: 80px;
+            
+        }
+
+        tr.topo {
+            background-color: lightgreen;
+        }
+
+        td.topo {
+            background-color: lightgreen;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Resolução do Desafio 03 de Tabelas</h1>
+
+<table>
+    <thead>
+        <tr class="topo">
+        <th rowspan="2">Área</th>
+        <th rowspan="2">Disciplina</th>
+        <th colspan="2">Notas</th>
+        <th rowspan="2">Média</th>
+        </tr>
+        
+        <tr class="topo">
+            <td>Nota 01</td>
+            <td>Nota 02</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th rowspan="4">Exatas</th>
+            <td>Matematica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Físca</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            
+        </tr>
+
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="topo">Médias Exatas</td>
+            <td class="topo">0.0</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Humanas</th>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="topo">Médias Humanas</td>
+            <td class="topo">0.0</td>
+        </tr>
+
+
+
+    </tbody>
+        
+    
+    
+
+
+</table>
+
+</body>
+</html>
