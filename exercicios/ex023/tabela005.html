@@ -27,6 +27,18 @@
             text-align: center;
         }
 
+        col.cnome { /*CLASSE CRIADA NO HTML*/
+            background-color: lightgreen;
+        }
+
+        col.cgrupo {
+            background-color: blueviolet;
+        }
+
+        col.cprof {
+            background-color: yellow;
+        }
+
     </style>
 </head>
 <body>
@@ -34,6 +46,13 @@
 
 
 <table>
+    <colgroup> <!-- USADA PARA AGRUPAR TODA COLUNA E NAO PRECISA DO FECHAMRNTO COL-->
+        <col class="cnome"> <!-- CLASSE PARA SER CHAMA DO NO CSS-->
+        <col class="cgrupo" span="2"> <!--HOUVE A EXPANSAO PARA DUAS COLUNAS-->
+        <col class="cprof"> <!-- CLASSE PARA SER CHAMA DO NO CSS-->
+        
+    </colgroup>
+
     <caption>Cadastro</caption> <!-- CRIAÇÃO DO TITULO DA TABELA-->
     <tr> <!-- CRIACAO DO TITULO DAS COLUNAS-->
         <th scope="col">Nome</th>
@@ -42,12 +61,12 @@
         <th scope="col">Profissão</th>
     </tr>
 
-    <tr>
-        <td>Ana Maria</td>
-        <td>F</td>
-        <td>25</td>
-        <td>Jornalista</td>
-    </tr>
+    <tr> <!-- CRIAÇÃO DA LINHA -->
+        <td>Ana Maria</td> <!-- CRIAÇÃO DOS DADOS DA LINHA-->
+        <td>F</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+        <td>25</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+        <td>Jornalista</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+    </tr> <!--FECHAMENTO DA LINHA-->
 
     <tr>
         <td>Cláudio</td>
@@ -57,11 +76,31 @@
     </tr>
 
     <tr>
+        <td>Gustavo</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+        <td>M</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+        <td>42</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+        <td>Programador</td><!-- CRIAÇÃO DOS DADOS DA LINHA-->
+    </tr>
+
+    <tr>
         <td>Hélio</td>
         <td>M</td>
         <td>19</td>
         <td>Vendedor</td>
+    </tr>
 
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>39</td>
+        <td>Médica</td>
+    </tr>
+
+    <tr>
+        <td>Otávio</td>
+        <td>M</td>
+        <td>22</td>
+        <td>Nutricionista</td>
     </tr>
 
 </table>
