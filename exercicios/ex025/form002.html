@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p><!-- CRIAÇÃO DO CAMPO USUÁRIO-->
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="isu" required minlength="5" maxlength="15" size="20" placeholder="Nome do Usuário" autocomplete="username">
+            <!--REQUIRED OBRIGA O USUARIO A DIGITAR ANTES E ENVIAR. MINIMO 5 E MAXIMO 15 -->
+            <!--SIZE É O TAMANHO DA CAIXA PARA ACEITAÇÃO DOS CARACTERES-->
+            <!--PLACEHOLDER É O NOME DO CAMPO DENTRO DA CAIXA-->
+            <!--AUTOCOMPLETE É PARA AUTO COMPLETAR O CAMPO -->
+        </p>
+
+        <p> <!-- CRIAÇÃO DO CAMPO SENHA-->
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="Digite a Senha" autocomplete="current-password">
+            <!-- OBRIGA O USUARIO A DIGITAR NO MINIMO 8 CARACTERES NA SENHA-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> <!--CRIAÇÃO DO BOTÃO ENVIAR-->
+            <input type="reset" value="Limpar"> <!--CRIAÇÃO DO BOTÃO LIMPAR-->
+        </p>
+
+    </form>
+</body>
+</html>
