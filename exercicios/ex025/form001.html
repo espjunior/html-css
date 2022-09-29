@@ -14,9 +14,11 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form<><!--CRIAÇÃO DO PRIMEIRO FORMULÁRIO-->
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="POST" autocomplete="off"><!--CRIAÇÃO DO PRIMEIRO FORMULÁRIO--><!--AUTOCOMPLETE OFF DESATIVA O AUTO COMPLETAR-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
     
