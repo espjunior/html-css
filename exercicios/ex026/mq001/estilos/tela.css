@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*Estilo para Telas*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none; /*RETIRAR A BOLINHA DOS ITENS DA LISTA*/
+    background-color: gray;
+}
+
+menu li { /*O MENU IRÁ FICAR UM AO LADO DO OUTRO*/
+    background-color: lightblue;
+    color: white;
+    display: inline-block; 
+    padding: 10px;
+}
+
+article { /*A NOTICIA IRÁ FICAR CENTRALZIADA*/
+    width: 600px;
+    display: block;/*A NOTICIA IRÁ FICAR CENTRALZIADA*/
+    margin: auto;
+}
