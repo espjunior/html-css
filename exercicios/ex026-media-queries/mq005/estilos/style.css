@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
+span#burguer {
+    background-color: rgb(10, 17, 17);
+    color: white;
+    display: block; /*PREENCHER TODO BACKGROUND DE UM CANTO A OUTRO DA TELA*/
+    text-align: center; /*CENTRALIZAR O ICONE*/
+    padding: 10px;
+    cursor: pointer; /*O CURSO IRÁ VIRAR UMA MÃOZINHA*/
+}
+
+span#burguer:hover {
+    background-color: white; /*MUDAR A COR AO PASSAR O CURSO*/
+    color: black; /*MUDAR A COR AO PASSAR O CURSO*/
+}
+
 menu {
-    display: block; /*CONFIGURAÇÃO DO MENU*/
+    display: none; /*O SITE IRA CARREGAR COM O CONTEUDO OCULTADO.*/
 }
 
 menu ul {
@@ -29,7 +43,7 @@ menu ul {
 
 menu a { /*LINK QUE ESTÁ DENTRO DO MENU*/
     display: block;
-    padding: 10px;
+    padding: 10px; /*ESPAÇAMENTO ENTRE ELES*/
     text-decoration: none;
     text-align: center;
     background-color: rgb(87, 87, 87);
@@ -42,20 +56,20 @@ menu a:hover {
 }
 
 main {
-    width: 90vw;
+    width: 90vw; /* FICAR 90% AFASTADO DO CANTO*/
     background-color: white;
-    margin: auto;
+    margin: auto; /*CENTRALIZAR O CONTEUDO*/
     margin-top: 10;
     padding: 10px;
     border-radius: 10px;
 }
 
 article > h2 {
-    padding-bottom: 20px;
+    padding-bottom: 20px; /*ESPAÇAMENTO ABAIXO DO TITULO DA NOTICIA*/
 }
 
 article > p {
-    text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 20px;
+    text-align: justify; /*JUSTIFICAR O TEXTO*/
+    margin-bottom: 20px; /*ESPAÇAMENTO ENTRE OS PARAGRAFOS*/
+    text-indent: 20px; /*ESPAÇAMENTO DO INICIO DO PARAGRAFO*/
 }
