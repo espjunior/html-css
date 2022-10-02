@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none; /*FAZER O HAMBUGUER SUMNIR*/
+    }
+
+    menu {
+        display: block; /*QUANDO A TELA AUMENTAR O MENU NÃO IRÁ SUMIR*/
+    }
+}
