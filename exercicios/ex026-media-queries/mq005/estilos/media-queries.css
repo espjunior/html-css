@@ -7,5 +7,15 @@
 
     menu {
         display: block; /*QUANDO A TELA AUMENTAR O MENU NÃO IRÁ SUMIR*/
+        
+    }
+
+    menu > ul > li {
+        display: inline-block; /*O MENU FICARÁ UM AO LADO DO OUTRO*/
+        
+    }
+
+    main {
+        width: 768px; /*QUANDO A TELA AUMENTAR O CONTEUDO FICAR COM A LARGURA 768*/
     }
 }

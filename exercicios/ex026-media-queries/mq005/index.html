@@ -12,7 +12,7 @@
     <!-- -->
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!--FUNÇÃO PARA O MENU-->
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!--LINHA DO DESIGNER DO MENU HAMBURGUER-->
@@ -45,6 +45,14 @@
     </main>
     <!--FUNÇÃO JAVA SCRIPT PARA OCULTAR O MENU-->
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
